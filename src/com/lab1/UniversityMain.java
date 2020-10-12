@@ -6,9 +6,9 @@ import java.util.List;
 public class UniversityMain {
 
     public static void main(String[] args) {
-        University utm = new University("utm", 1990);
-        University usm = new University("usm", 2000);
-        University usmf = new University("usmf", 1903);
+        University utm = new University("UTM", 1990);
+        University usm = new University("USM", 2000);
+        University usmf = new University("USMF", 1903);
 
         utm.setFoundationYear(1985);
 
@@ -22,14 +22,14 @@ public class UniversityMain {
         List<Student> usmStudents = new ArrayList<>();
         usmStudents.add(new Student(20, "Jora", 4));
         usmStudents.add(new Student(23, "Petrika", 5));
-        usmStudents.add(new Student(18, "Johy davis", 2));
+        usmStudents.add(new Student(18, "Ion", 2));
         usm.setStudentList(usmStudents);
 
 
         List<Student> usmfStudents = new ArrayList<>();
-        usmfStudents.add(new Student(20, "Rafa", 8));
-        usmfStudents.add(new Student(23, "Pafa", 8));
-        usmfStudents.add(new Student(18, "Marcelo", 7));
+        usmfStudents.add(new Student(20, "Mihai", 8));
+        usmfStudents.add(new Student(23, "Pavel", 8));
+        usmfStudents.add(new Student(18, "Marcela", 7));
         usmf.setStudentList(usmfStudents);
 
         List<University> universityList = new ArrayList<>();
@@ -45,6 +45,6 @@ public class UniversityMain {
             sum += average;
         }
 
-        System.out.println("Average between universityies " + sum / universityList.size());
+        System.out.println("Average mark for all universities " + sum / universityList.size());
     }
 }

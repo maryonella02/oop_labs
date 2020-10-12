@@ -7,16 +7,16 @@ public class MainQueue {
         unlimitedQueue.push("first");
         unlimitedQueue.push("second");
         unlimitedQueue.push("third");
-        System.out.println("Popped element " + unlimitedQueue.pop());
+        System.out.println("Popped element: " + unlimitedQueue.pop());
 
         limitedQueue.push("first");
         limitedQueue.push("second");
         limitedQueue.push("third");
-        System.out.println("Is full " + limitedQueue.isFull());
-        System.out.println("Is unlimited full " + unlimitedQueue.isFull());
-        System.out.println("Operation status  " + limitedQueue.push("unsucess"));
+        System.out.println("Is limited queue full? " + limitedQueue.isFull());
+        System.out.println("Is unlimited queue full? " + unlimitedQueue.isFull());
+        System.out.println("Operation status for pushing in full limited queue one more element: " + limitedQueue.push("four"));
         Queue empty = new Queue();
-        System.out.println("Is empty queue empty? " + empty.isEmpty());
+        System.out.println("Is queue empty? " + empty.isEmpty());
 
     }
 }

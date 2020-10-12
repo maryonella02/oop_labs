@@ -7,7 +7,7 @@ public class MainMonitor {
         samsung.setColor("blue");
         System.out.println(samsung);
         Monitor lg = new Monitor("black", 30, "2444x2500");
-        System.out.println("Lg with samsung are equal?");
+        System.out.println("Are monitors equal?");
         System.out.println(samsung.equals(lg));
 
     }
