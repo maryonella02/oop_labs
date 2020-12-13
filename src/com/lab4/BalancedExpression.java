@@ -25,7 +25,7 @@ public class BalancedExpression {
                     if (stack.isEmpty())
                         return false;
                     check = stack.pop();
-                    if (check == '{' || check == '[') //|| stack.isEmpty())
+                    if (check == '{' || check == '[')
                         return false;
                     break;
 
@@ -33,7 +33,7 @@ public class BalancedExpression {
                     if (stack.isEmpty())
                         return false;
                     check = stack.pop();
-                    if (check == '(' || check == '[' || stack.isEmpty())
+                    if (check == '(' || check == '[')
                         return false;
                     break;
 
@@ -41,7 +41,7 @@ public class BalancedExpression {
                     if (stack.isEmpty())
                         return false;
                     check = stack.pop();
-                    if (check == '(' || check == '{' || stack.isEmpty())
+                    if (check == '(' || check == '{')
                         return false;
                     break;
             }
