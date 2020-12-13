@@ -1,7 +1,7 @@
 package com.lab5;
 
 public class E extends D {
-    protected String e = "e";
+    protected String e;
 
     public E () {}
     public E (String state) {

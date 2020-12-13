@@ -1,7 +1,7 @@
 package com.lab5;
 
 public class I extends H {
-    protected String i = "i";
+    protected String i;
 
     public I () {}
     public I (String state) {this.i = state;}

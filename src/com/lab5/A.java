@@ -1,7 +1,7 @@
 package com.lab5;
 
 public class A {
-    protected String a = "a";
+    protected String a;
     protected X x = new X("xxx from a");
     public A () {}
     public A (String state, X x) {

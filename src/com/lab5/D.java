@@ -1,7 +1,7 @@
 package com.lab5;
 
 public class D extends C {
-    protected String d = "d";
+    protected String d;
 
     protected X x = new X("xxx from d");
     public D () {}

@@ -1,7 +1,7 @@
 package com.lab5;
 
 public class G extends F {
-    protected String g = "g";
+    protected String g;
     protected X x = new X("xxx_g");
     public G () {}
     public G (String state) {this.g = state;}
